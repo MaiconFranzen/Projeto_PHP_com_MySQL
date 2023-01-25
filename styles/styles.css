@@ -39,6 +39,20 @@ table.listagem td:nth-child(3){
     width: 90px;
 }
 
+table.details {
+    width: 100%;
+}
+
+table.details td {
+    padding: 10px;
+    vertical-align: top;
+   /* border: 1px solid black; */
+}
+
 img.small {
     width: 50px;
+}
+
+img.full {
+    height: 400px;
 }
