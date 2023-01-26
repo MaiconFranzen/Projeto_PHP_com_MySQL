@@ -10,7 +10,8 @@
 </head>
 
 <body>
-<div id="corpo">
+
     <header>
 
     </header>
+    <div id="corpo">
