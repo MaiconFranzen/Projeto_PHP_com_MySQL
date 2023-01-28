@@ -3,6 +3,7 @@
 include_once "templates/header.php";
 require_once "includes/banco.php";
 require_once "includes/functions.php";
+require_once "includes/login.php";
 
 ?>
 
@@ -11,6 +12,7 @@ $c = $_GET['cod'] ?? 0;
 $busca = $banco->query("SELECT * FROM jogos WHERE cod='$c'");
 ?>
 <h1>Game Details</h1>
+<?php echo goback(); ?>
 <table class="details">
     <?php
     if (!$busca) {
@@ -30,4 +32,4 @@ $busca = $banco->query("SELECT * FROM jogos WHERE cod='$c'");
     }
     ?>
 </table>
-<a href="index.php"><img src="icons/icoback.png"></a>
+<?php echo goback(); ?>
